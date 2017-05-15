@@ -1,0 +1,1031 @@
+﻿Log file open, 05/14/17 18:15:08
+LogInit:Display: Running engine for game: Inventory
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1555824552) SRandInit(-1555824552).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.076191
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3416026
+LogInit: Engine Version: 4.15.2-3416026+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): May  1 2017 13:11:28
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line:  
+LogInit: Base directory: D:/EpicGames/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.05.14-09.15.09:612][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.14-09.15.09:612][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.05.14-09.15.09:619][  0]LogInit: Computer: DESKTOP-DIJL62K
+[2017.05.14-09.15.09:619][  0]LogInit: User: Administrator
+[2017.05.14-09.15.09:619][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.05.14-09.15.09:619][  0]LogInit: High frequency timer resolution =3.328132 MHz
+[2017.05.14-09.15.09:619][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2017.05.14-09.15.09:619][  0]LogMemory: Platform Memory Stats for Windows
+[2017.05.14-09.15.09:619][  0]LogMemory: Process Physical Memory: 264.39 MB used, 264.39 MB peak
+[2017.05.14-09.15.09:619][  0]LogMemory: Process Virtual Memory: 262.56 MB used, 262.56 MB peak
+[2017.05.14-09.15.09:619][  0]LogMemory: Physical Memory: 5205.12 MB used,  11141.43 MB free, 16346.55 MB total
+[2017.05.14-09.15.09:619][  0]LogMemory: Virtual Memory: 644.83 MB used,  11141.43 MB free, 134217728.00 MB total
+[2017.05.14-09.15.09:689][  0]LogTextLocalizationManager: No specific translations for ('ko-KR') exist, so ('ko') translations will be used.
+[2017.05.14-09.15.09:735][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:KismetSchema, Key:Default):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (940523119) Localized String: (디폴트)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (940523119) Localized String: (기본)
+[2017.05.14-09.15.09:735][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:InternalTimeAccumulator):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용되는 누적 시간입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (502993589) Localized String: (내부 시간 누산기 - 이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (502993589) Localized String: (이 노드에서 애셋을 레퍼런싱하는 데 사용된 누적 시간입니다.)
+[2017.05.14-09.15.09:735][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:bIgnoreForRelevancyTest):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (319969718) Localized String: (True 면, 스테이트에서 최고 가중치 애니메이션을 찾는 "Relevant anim" 노드는 이 노드를 무시합니다.
+ )
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (319969718) Localized String: (연관성 테스트에 무시 - true 인 경우 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" (연관 애님) 노드가
+이 노드를 무시합니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (319969718) Localized String: (True 면 스테이트 내 최고 웨이팅된 애니메이션을 찾는 "Relevant anim" 노드가 무시됩니다.
+ )
+[2017.05.14-09.15.09:735][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_AssetPlayerBase:BlendWeight):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 마지막 걸린 블렌드웨이트 입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1232800293) Localized String: (블렌드 웨이트 - 이 노드에 대해 마지막으로 접한 블렌드 웨이트입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1232800293) Localized String: (이 노드에 대해 마지막 접한 블렌드 웨이트)
+[2017.05.14-09.15.09:735][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝까지 재생되면 반복할까요?)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복할까요?)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:bSkipFirstUpdateTransition):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1865475011) Localized String: (첫 업데이트시 도입 상태에서의 트랜지션을 건너뛸까요? 
+기본은 true 로, 첫 업데이트시에는 트랜지션 데이터를 버립니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1865475011) Localized String: (첫 번째 업데이트 트랜지션 건너뛰기 - 첫 번째 업데이트에서 입력 스테이트의 트랜지션을 건너뜁니까?
+디폴트는 true 고 첫 번째 업데이트의 트랜지션 데이터를 버립니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (블렌드스페이스에서 샘플링할 X 좌표입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2060772590) Localized String: (X - 블렌드스페이스 샘플의 X 좌표입니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (블렌드스페이스에서 샘플링할 Y 좌표입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (Y - 블렌드스페이스 샘플의 Y 좌표입니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (블렌드스페이스에서 샘플링할 Z 좌표입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1728943471) Localized String: (Z - 블렌드스페이스 샘플의 Z 좌표입니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (재생할 블렌드스페이스 애셋입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1599043277) Localized String: (블렌드스페이스 - 재생할 블렌드스페이스 애셋입니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (이 머신에서 한 프레임 내 '동시에' 취할 수 있는 트랜지션 최대 수입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (1567650430) Localized String: (프레임 당 최대 트랜지션 - 한 프레임에서 이 머신이 동시에 취할 수 있는 트랜지션 최대 수입니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 배수입니다. 음수가 되면 애니메이션을 역순으로 재생하게 됩니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 되면 애니메이션을 거꾸로 재생합니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:StartPosition):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/EditorTutorials/ko/EditorTutorials.locres) Source String Hash: (-207153555) Localized String: (시작 위치 범위는 [0,1] 이며, 재초기화시에만 적용됩니다.
+루핑을 하면, 1 회전 후 0.f 부터 시작할 것입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-207153555) Localized String: (시작 위치 - [0, 1] 범위의 시작 위치로, 재초기화할 때만 적용됩니다.
+반복하면 1회전 후 0.f 부터 시작됩니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorWidth):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1448580153) Localized String: (센서 폭 - 필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1448580153) Localized String: (필름백 또는 디지털 센서의 가로 크기로, mm 단위입니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorAspectRatio):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-194807515) Localized String: (센서 종횡비 - 읽기 전용입니다. 센서 치수에서 계산했습니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-194807515) Localized String: (읽기 전용입니다. 센서 크기에서 계산했습니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:bLoopAnimation):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (2133979316) Localized String: (루프 - 애니메이션이 끝에 도달했을 때 계속 반복시켜야 할까요?)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (2133979316) Localized String: (애니메이션이 끝에 도달하면 계속해서 루핑시킬것인지 입니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:Sequence):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (421436424) Localized String: (시퀀스 - 재생할 애니메이션 시퀀스 애셋입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (421436424) Localized String: (재생할 애니메이션 시퀀스 애셋입니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:PlayRate):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (재생 속도 - 재생 속도 배수입니다. 음수가 될 수 있으며, 그러면 애니메이션이 거꾸로 재생됩니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1274923958) Localized String: (플레이 속도 배수입니다. 음수가 되면 애니메이션이 역방향으로 재생됩니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_SequencePlayer:StartPosition):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (771611000) Localized String: (시작 위치 - 시작 위치로 재초기화할 때만 적용됩니다.
+반복하면, 1회전 후 0.f 부터 시작됩니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (771611000) Localized String: (시작 위치로, 재초기화시에만 적용됩니다.
+루핑을 하면, 1회전 후 0.f 부터 시작할 것입니다.)
+[2017.05.14-09.15.09:736][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:CameraFilmbackSettings:SensorHeight):
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/ToolTips/ko/ToolTips.locres) Source String Hash: (-1311569777) Localized String: (센서 높이 - 필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+Localization Resource: (D:/EpicGames/UE_4.15/Engine/Content/Localization/Engine/ko/Engine.locres) Source String Hash: (-1311569777) Localized String: (필름백 또는 디지털 센서의 세로 크기로, mm 단위입니다.)
+[2017.05.14-09.15.10:159][  0]LogD3D11RHI: D3D11 adapters:
+[2017.05.14-09.15.10:182][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
+[2017.05.14-09.15.10:182][  0]LogD3D11RHI:       8144/0/8173 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.05.14-09.15.10:184][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.05.14-09.15.10:184][  0]LogD3D11RHI:       0/0/8173 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.05.14-09.15.10:184][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.05.14-09.15.10:189][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.05.14-09.15.10:189][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
+[2017.05.14-09.15.10:189][  0]LogWindows: EnumDisplayDevices:
+[2017.05.14-09.15.10:190][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:0 D:1)
+[2017.05.14-09.15.10:190][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
+[2017.05.14-09.15.10:190][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2017.05.14-09.15.10:191][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2017.05.14-09.15.10:191][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.05.14-09.15.10:191][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
+[2017.05.14-09.15.10:191][  0]LogD3D11RHI:   Driver Version: 376.53 (internal:21.21.13.7653, unified:376.53)
+[2017.05.14-09.15.10:191][  0]LogD3D11RHI:      Driver Date: 12-29-2016
+[2017.05.14-09.15.10:191][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.05.14-09.15.10:213][  0]LogD3D11RHI: [Aftermath] Aftermath enabled but failed to initialize due to reason: DriverVersionNotSupported
+[2017.05.14-09.15.10:213][  0]LogD3D11RHI: Async texture creation enabled
+[2017.05.14-09.15.10:223][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.05.14-09.15.10:316][  0]LogShaderCompilers: Guid format shader working directory is 9 characters bigger than the processId version (../../../../../GitHub/VR_Inventory/Inventory/Intermediate/Shaders/WorkingDirectory/10536/).
+[2017.05.14-09.15.10:316][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Administrator/AppData/Local/Temp/UnrealShaderWorkingDir/4B1FB8074E47B69EF06317B5B56A89A8/'.
+[2017.05.14-09.15.10:316][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.05.14-09.15.11:324][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.05.14-09.15.11:370][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.05.14-09.15.11:418][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.05.14-09.15.11:465][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.05.14-09.15.11:512][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.05.14-09.15.11:559][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.05.14-09.15.11:608][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.05.14-09.15.11:655][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.05.14-09.15.11:691][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.05.14-09.15.11:738][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.05.14-09.15.11:787][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.05.14-09.15.11:833][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.05.14-09.15.11:878][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.05.14-09.15.11:926][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.05.14-09.15.11:973][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.05.14-09.15.12:070][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.05.14-09.15.12:070][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.05.14-09.15.12:104][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.05.14-09.15.12:187][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.05.14-09.15.12:215][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.05.14-09.15.12:261][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.05.14-09.15.12:308][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.05.14-09.15.12:353][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.05.14-09.15.12:398][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.05.14-09.15.12:399][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.05.14-09.15.12:732][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.05.14-09.15.12:776][  0]LogDerivedDataCache: Loaded boot cache 0.04s 50MB C:/Users/Administrator/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.14-09.15.12:776][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Administrator/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.05.14-09.15.12:777][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../GitHub/VR_Inventory/Inventory/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.05.14-09.15.12:777][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.05.14-09.15.12:777][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../GitHub/VR_Inventory/Inventory/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.05.14-09.15.12:777][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.05.14-09.15.12:792][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.05.14-09.15.12:804][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Administrator/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.05.14-09.15.12:812][  0]LogSlate: Using Freetype 2.6.0
+[2017.05.14-09.15.12:813][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.14-09.15.12:813][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.05.14-09.15.13:103][  0]LogInit: Selected Device Profile: [Windows]
+[2017.05.14-09.15.13:105][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.05.14-09.15.13:282][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.05.14-09.15.13:316][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.05.14-09.15.13:364][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.05.14-09.15.13:364][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.05.14-09.15.13:364][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.05.14-09.15.13:876][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: inventory, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 2716021693
+[2017.05.14-09.15.13:913][  0]LogAssetRegistry: FAssetRegistry took 0.0211 seconds to start up
+[2017.05.14-09.15.13:953][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.023589 seconds
+[2017.05.14-09.15.13:959][  0]LogUObjectArray: 32493 objects as part of root set at end of initial load.
+[2017.05.14-09.15.13:959][  0]LogUObjectAllocator: 7077032 out of 0 bytes used by permanent object pool.
+[2017.05.14-09.15.13:959][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.05.14-09.15.14:005][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.05.14-09.15.15:811][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.05.14-09.15.15:843][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.05.14-09.15.16:247][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.05.14-09.15.16:568][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.05.14-09.15.16:569][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.05.14-09.15.16:608][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.05.14-09.15.16:646][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.05.14-09.15.17:671][  0]LogEngine: Initializing Engine...
+[2017.05.14-09.15.17:703][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-C48F2C84
+[2017.05.14-09.15.17:810][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.05.14-09.15.17:810][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.05.14-09.15.17:911][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.05.14-09.15.17:983][  0]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.15.18:007][  0]LogInit: FAudioDevice initialized.
+[2017.05.14-09.15.18:032][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB C:/Users/Administrator/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.05.14-09.15.18:037][  0]LogInit: Texture streaming: Enabled
+[2017.05.14-09.15.18:100][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.05.14-09.15.18:173][  0]LogInit: Transaction tracking system initialized
+[2017.05.14-09.15.18:459][  0]BlueprintLog: New page: 에디터 로드
+[2017.05.14-09.15.19:150][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2017.05.14-09.15.19:726][  0]LogConsoleResponse:Display: 
+[2017.05.14-09.15.19:836][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.05.14-09.15.19:836][  0]LogCook:Display: Mobile HDR setting 1
+[2017.05.14-09.15.20:299][  0]LogFileCache: Scanning file cache for directory 'D:/GitHub/VR_Inventory/Inventory/Content/' took 0.01s
+[2017.05.14-09.15.20:674][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2017.05.14-09.15.20:674][  0]Cmd: MAP LOAD FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/Level/NewMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.05.14-09.15.20:674][  0]LightingResults: New page: 라이팅 빌드
+[2017.05.14-09.15.20:708][  0]MapCheck: New page: 맵 체크
+[2017.05.14-09.15.20:708][  0]LightingResults: New page: 라이팅 빌드
+[2017.05.14-09.15.21:993][  0]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.15.22:019][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.05.14-09.15.22:020][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.05.14-09.15.22:105][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 85.46ms.
+[2017.05.14-09.15.22:105][  0]LogFileHelpers: Loading map 'NewMap' took 1.431
+[2017.05.14-09.15.22:182][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.05.14-09.15.22:290][  0]LogCollectionManager: Loaded 0 collections in 0.001048 seconds
+[2017.05.14-09.15.22:365][  0]LogFileCache: Scanning file cache for directory 'D:/GitHub/VR_Inventory/Inventory/Saved/Collections/' took 0.01s
+[2017.05.14-09.15.22:365][  0]LogFileCache: Scanning file cache for directory 'D:/GitHub/VR_Inventory/Inventory/Content/Developers/Administrator/Collections/' took 0.01s
+[2017.05.14-09.15.22:365][  0]LogFileCache: Scanning file cache for directory 'D:/GitHub/VR_Inventory/Inventory/Content/Collections/' took 0.01s
+[2017.05.14-09.15.22:365][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000014 seconds
+[2017.05.14-09.15.22:375][  0]LogContentBrowser: Native class hierarchy populated in 0.0086 seconds. Added 2245 classes and 453 folders.
+[2017.05.14-09.15.22:426][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.05.14-09.15.22:481][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.05.14-09.15.22:521][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.05.14-09.15.22:561][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.05.14-09.15.22:566][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2017.05.14-09.15.22:625][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2017.05.14-09.15.22:626][  0]LogLoad: (Engine Initialization) Total time: 14.79 seconds
+[2017.05.14-09.15.22:626][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.57 seconds
+[2017.05.14-09.15.22:626][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.05.14-09.15.22:626][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.05.14-09.15.22:640][  0]LogOcInput: OculusInput pre-init called
+[2017.05.14-09.15.22:640][  0]LogSteamVRController: Controller role for device 1 is 2 (invalid=0, left=1, right=2).
+[2017.05.14-09.15.22:640][  0]LogSteamVRController:Warning: Controller device 1 is being assigned to its prefered role 'right'.
+[2017.05.14-09.15.22:640][  0]LogSteamVRController: Controller device 1 is being assigned unreal hand 1 (left=0, right=1).
+[2017.05.14-09.15.22:640][  0]LogSteamVRController: Controller role for device 2 is 0 (invalid=0, left=1, right=2).
+[2017.05.14-09.15.22:640][  0]LogSteamVRController: Putting controller 2 on the left hand because there is already a controller for the right.
+[2017.05.14-09.15.22:640][  0]LogSteamVRController: Controller device 2 is being assigned unreal hand 0 (left=0, right=1).
+[2017.05.14-09.15.22:660][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.05.14-09.15.22:662][  0]LogSlate: Took 0.000335 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.05.14-09.15.22:666][  0]LogSlate: Took 0.002410 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2017.05.14-09.15.22:668][  0]LogSlate: Took 0.000499 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.05.14-09.15.22:675][  0]LogSlate: Took 0.000424 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.05.14-09.15.22:790][  0]LogSlate: Took 0.000226 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.14-09.15.22:836][  0]LogRenderer: Reallocating scene render targets to support 1240x600 NumSamples 1 (Frame:2).
+[2017.05.14-09.15.22:890][  1]LogAssetRegistry: Asset discovery search completed in 8.9976 seconds
+[2017.05.14-09.15.22:890][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000003 seconds (found 0 objects)
+[2017.05.14-09.15.22:890][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000023 seconds (updated 0 objects)
+[2017.05.14-09.15.23:650][ 88]LogSlate: Took 0.000338 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.14-09.15.24:116][ 88]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 112 classes and 0 folders.
+[2017.05.14-09.15.25:791][ 88]LogSlate: Took 0.000264 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.05.14-09.15.25:886][ 89]LogSlate: Took 0.000367 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.05.14-09.15.50:082][262]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.14-09.15.50:860][307]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.14-09.15.53:418][500]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.14-09.19.46:666][368]LogEditorViewport: Clicking on Actor (LMB): MotionControllerPawn_C (MotionControllerPawn)
+[2017.05.14-09.21.28:719][100]LogSavePackage: Save=77.64ms
+[2017.05.14-09.21.28:719][100]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawn72BE73914AF4170ADCB3F0894ABE984D.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.21.28:720][100]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.21.29:248][144]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.21.51:802][427]LogRenderer: Reallocating scene render targets to support 1240x712 NumSamples 1 (Frame:19643).
+[2017.05.14-09.27.32:439][821]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.27.33:088][865]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.27.33:182][865]LogSavePackage: Save=69.21ms
+[2017.05.14-09.27.33:182][865]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManager50CE7B7C4BEA916C3E43BCA94D6F4903.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.27.33:184][865]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.30.08:411][ 45]LogSlate: Took 0.000423 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.05.14-09.30.32:114][793]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/Item_UseableInfo" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/Item_UseableInfo.uasset" SILENT=true
+[2017.05.14-09.30.32:116][793]LogSavePackage: Save=1.60ms
+[2017.05.14-09.30.32:116][793]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/Item_UseableInfoC30284C641214EBA947550B78B0B397F.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/Item_UseableInfo.uasset'
+[2017.05.14-09.30.32:118][793]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/Item_UseableInfo.uasset
+[2017.05.14-09.30.53:809][528]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/UseableItemDB" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset" SILENT=true
+[2017.05.14-09.30.53:811][528]LogSavePackage: Save=0.84ms
+[2017.05.14-09.30.53:811][528]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/UseableItemDBAC1EC7BD4992C24F0273B98B70368734.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset'
+[2017.05.14-09.30.53:813][528]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset
+[2017.05.14-09.31.18:728][336]LogSavePackage: Save=2.42ms
+[2017.05.14-09.31.18:728][336]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseable_HealthPotion005E4D53409BA06FDE08E38080B202FE.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.uasset'
+[2017.05.14-09.31.18:729][336]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.uasset
+[2017.05.14-09.31.50:344][561]LogSavePackage: Save=1.99ms
+[2017.05.14-09.31.50:345][561]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseable_StaminaPotionF706E5794C2774838B5485BF31667294.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable_StaminaPotion.uasset'
+[2017.05.14-09.31.50:346][561]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable_StaminaPotion.uasset
+[2017.05.14-09.31.51:035][636]LogSlate:Warning: Prevented a slow task dialog from being summoned while a context menu was open
+[2017.05.14-09.31.53:286][888]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/UseableItemDB" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset" SILENT=true
+[2017.05.14-09.31.53:308][888]LogSavePackage: Save=0.94ms
+[2017.05.14-09.31.53:308][888]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/UseableItemDBCDE800B94CB18DA09A36268122BA2FBA.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset'
+[2017.05.14-09.31.53:310][888]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset
+[2017.05.14-09.33.04:676][938]LogSlate: Took 0.000253 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.05.14-09.33.14:487][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.33.14:607][811]LogSavePackage: Save=74.92ms
+[2017.05.14-09.33.14:607][811]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManager35A46C5E472EB3D5F1CA85AA5D2A7918.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.33.14:609][811]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.33.14:944][841]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.33.35:764][737]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.33.35:854][737]LogSavePackage: Save=71.41ms
+[2017.05.14-09.33.35:854][737]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManager5C89A3984206F52166FB979AFEE215EB.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.33.35:856][737]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.33.36:269][774]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.33.45:397][766]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/Item_UseableInfo" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/Item_UseableInfo.uasset" SILENT=true
+[2017.05.14-09.33.45:419][766]LogSavePackage: Save=1.30ms
+[2017.05.14-09.33.45:419][766]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/Item_UseableInfo987F0D53469BDBEBEB3AD08F3720A411.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/Item_UseableInfo.uasset'
+[2017.05.14-09.33.45:421][766]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/Item_UseableInfo.uasset
+[2017.05.14-09.34.01:905][693]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/UseableItemDB" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset" SILENT=true
+[2017.05.14-09.34.01:929][693]LogSavePackage: Save=0.98ms
+[2017.05.14-09.34.01:929][693]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/UseableItemDB89AE1FEF42875BA7727D72BC7CE3A80E.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset'
+[2017.05.14-09.34.01:930][693]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset
+[2017.05.14-09.34.05:037][  6]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.34.05:131][  6]LogSavePackage: Save=71.64ms
+[2017.05.14-09.34.05:131][  6]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManager28BD11D345F3C58E386A97A8F4B3540E.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.34.05:132][  6]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.34.05:566][ 45]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.35.16:889][ 62]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.35.16:983][ 62]LogSavePackage: Save=73.32ms
+[2017.05.14-09.35.16:983][ 62]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManagerEDFEFEFB4A829795F6EF18ABE257F349.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.35.16:985][ 62]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.35.17:318][ 92]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.35.26:096][874]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.35.26:191][874]LogSavePackage: Save=75.15ms
+[2017.05.14-09.35.26:191][874]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManager096A91804E16B8C642CCA0A348B3C5F1.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.35.26:192][874]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.35.57:169][435]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.35.57:264][435]LogSavePackage: Save=72.65ms
+[2017.05.14-09.35.57:264][435]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManager3B32CC4B4B243123B13F67AE99F93953.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.35.57:266][435]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.35.57:577][460]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.36.08:432][287]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.36.08:526][287]LogSavePackage: Save=74.19ms
+[2017.05.14-09.36.08:526][287]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManagerC8C45C614CF2E2455E4966B27E6C65ED.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.36.08:528][287]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.36.08:750][305]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.36.08:818][305]LogBlueprintUserMessages: [ItemDBManager] 2
+[2017.05.14-09.36.08:818][305]LogBlueprintUserMessages: [ItemDBManager_C_0] 2
+[2017.05.14-09.36.08:910][305]LogBlueprintUserMessages: [ItemDBManager] 2
+[2017.05.14-09.36.08:910][305]LogBlueprintUserMessages: [ItemDBManager_C_0] 2
+[2017.05.14-09.36.10:384][419]LogBlueprintUserMessages: [ItemDBManager] 2
+[2017.05.14-09.36.10:384][419]LogBlueprintUserMessages: [ItemDBManager_C_0] 2
+[2017.05.14-09.36.10:932][458]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.36.11:027][458]LogSavePackage: Save=75.32ms
+[2017.05.14-09.36.11:027][458]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManagerC126733C455373A86E6F74A54ACC37E7.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.36.11:029][458]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.36.11:341][484]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.36.35:777][722]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemUseable" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset" SILENT=true
+[2017.05.14-09.36.35:803][722]LogSavePackage: Save=5.90ms
+[2017.05.14-09.36.35:803][722]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseableC7426DC44EDA9FF67AFEFF87905817C6.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset'
+[2017.05.14-09.36.35:805][722]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset
+[2017.05.14-09.36.36:218][760]BlueprintLog: New page: ItemUseable 컴파일
+[2017.05.14-09.36.39:720][ 44]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemUseable" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset" SILENT=true
+[2017.05.14-09.36.39:747][ 44]LogSavePackage: Save=5.58ms
+[2017.05.14-09.36.39:747][ 44]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseable1731B28B4958A6DEE5CA77AD85CB405D.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset'
+[2017.05.14-09.36.39:748][ 44]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset
+[2017.05.14-09.36.40:132][ 78]BlueprintLog: New page: ItemUseable 컴파일
+[2017.05.14-09.37.10:972][553]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.37.11:080][553]LogSavePackage: Save=87.12ms
+[2017.05.14-09.37.11:080][553]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManager44838F0F4668C0180B6D9B86FAE43E43.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.37.11:082][553]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.37.11:422][580]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.37.31:862][119]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemUseable" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset" SILENT=true
+[2017.05.14-09.37.31:886][119]LogSavePackage: Save=5.55ms
+[2017.05.14-09.37.31:886][119]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseable2C29494B476B8EC98891EB9C661F520C.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset'
+[2017.05.14-09.37.31:887][119]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset
+[2017.05.14-09.39.38:366][541]LogSavePackage: Save=85.75ms
+[2017.05.14-09.39.38:366][541]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawn348425734D3FE80C4BA5D9829E44A447.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.39.38:368][541]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.39.38:650][564]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.39.54:835][877]LogEditorTransaction: Undo 핀 링크 생성
+[2017.05.14-09.39.56:462][ 15]LogEditorTransaction: Undo 핀 링크 생성
+[2017.05.14-09.39.57:035][ 65]LogEditorTransaction: Undo 현 선택을 삭제합니다.
+[2017.05.14-09.39.58:922][211]LogSavePackage: Save=87.61ms
+[2017.05.14-09.39.58:922][211]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawnAC5AFD44427762F4B5FD6F9915849042.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.39.58:924][211]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.39.59:360][248]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.40.11:470][256]LogSavePackage: Save=87.19ms
+[2017.05.14-09.40.11:470][256]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawn2A7F7E494FE4C4CAA018C1A1BF6FF108.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.40.11:473][256]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.40.11:789][283]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.40.47:786][ 81]Cmd: MODE GRID=0
+[2017.05.14-09.40.50:101][254]LogSavePackage: Save=90.56ms
+[2017.05.14-09.40.50:101][254]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawnA64ECB874F51E9554077DDA04B482A68.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.40.50:103][254]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.40.50:454][282]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.40.57:015][726]LogSavePackage: Save=88.28ms
+[2017.05.14-09.40.57:015][726]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawnAE7AEAEE4473F6248D0D469353A3DB9D.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.40.57:017][726]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.40.57:407][758]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.41.05:924][269]LogSavePackage: Save=89.41ms
+[2017.05.14-09.41.05:924][269]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawnAC9ACFD0462F85B482767CA70227969D.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.41.05:926][269]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.41.06:275][296]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.41.10:828][630]LogSavePackage: Save=88.54ms
+[2017.05.14-09.41.10:828][630]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawnB42752BF4C4FCB42A392C7A8A3714E62.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.41.10:830][630]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.41.11:108][655]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.41.50:543][988]LogSavePackage: Save=92.75ms
+[2017.05.14-09.41.50:543][988]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawn9ECCBC714895BA88F8027E92CB2FD7C6.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.41.50:545][988]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.41.50:940][ 22]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.42.14:669][316]LogSavePackage: Save=3.56ms
+[2017.05.14-09.42.14:669][316]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseable_HealthPotionD09E54FE4B1336BF8021888BE4F07060.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.uasset'
+[2017.05.14-09.42.14:671][316]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.uasset
+[2017.05.14-09.42.15:002][349]BlueprintLog: New page: ItemUseable_HealthPotion 컴파일
+[2017.05.14-09.42.17:533][576]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemDBManager" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset" SILENT=true
+[2017.05.14-09.42.17:656][576]LogSavePackage: Save=79.15ms
+[2017.05.14-09.42.17:656][576]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemDBManager2D61DA354000CCB694872AB2265BCF1D.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset'
+[2017.05.14-09.42.17:658][576]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemDBManager.uasset
+[2017.05.14-09.42.18:010][604]BlueprintLog: New page: ItemDBManager 컴파일
+[2017.05.14-09.42.49:898][327]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.42.50:152][327]LogSavePackage: Save=203.36ms
+[2017.05.14-09.42.50:152][327]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory8581F612436E64455993F1BFC7A84582.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.42.50:154][327]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.42.50:284][340]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.43.50:766][316]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_InvenSlot" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_InvenSlot.uasset" SILENT=true
+[2017.05.14-09.43.50:900][316]LogSavePackage: Save=92.16ms
+[2017.05.14-09.43.50:900][316]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_InvenSlot33C400734D2DA77885F0C881AA7E42DD.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_InvenSlot.uasset'
+[2017.05.14-09.43.50:901][316]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_InvenSlot.uasset
+[2017.05.14-09.43.52:968][495]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.43.53:188][495]LogSavePackage: Save=202.33ms
+[2017.05.14-09.43.53:188][495]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory8BBD1FDD45732198BF7278B9D80B401B.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.43.53:190][495]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.43.53:602][531]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.44.25:301][ 37]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.44.25:530][ 37]LogSavePackage: Save=211.17ms
+[2017.05.14-09.44.25:530][ 37]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory7FA042184A09551E78702EB68CEE4683.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.44.25:532][ 37]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.44.25:931][ 72]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.44.47:109][564]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.44.47:335][564]LogSavePackage: Save=207.12ms
+[2017.05.14-09.44.47:335][564]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_InventoryD8F20C3F41A2D2CC33094ABB4A7F5AD7.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.44.47:336][564]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.44.47:835][602]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.44.53:794][942]LogEditorViewport: Clicking on Actor (LMB): VR_NewStash_C (VR_NewStash)
+[2017.05.14-09.45.06:316][859]LogTemp: Repeting last play command: VR 프리뷰
+[2017.05.14-09.45.06:334][859]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-09.45.06:335][859]PIE: New page: PIE 세션: NewMap (2017. 5. 15. 오전 3:45:06)
+[2017.05.14-09.45.06:335][859]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_NewMap
+[2017.05.14-09.45.06:338][859]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003677s)
+[2017.05.14-09.45.06:339][859]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.45.06:339][859]LogPlayLevel: PIE: World Init took: (0.000684s)
+[2017.05.14-09.45.06:339][859]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/NewMap.NewMap to /Game/Level/UEDPIE_0_NewMap.NewMap (0.004557s)
+[2017.05.14-09.45.06:427][859]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.45.06:442][859]LogInit: FAudioDevice initialized.
+[2017.05.14-09.45.06:574][859]LogLoad: Game class is 'GameModeBase'
+[2017.05.14-09.45.06:577][859]LogWorld: Bringing World /Game/Level/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.05.14-18.45.06
+[2017.05.14-09.45.06:577][859]LogWorld: Bringing up level for play took: 0.001423
+[2017.05.14-09.45.06:614][859]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0007 seconds. Added 11 classes and 0 folders.
+[2017.05.14-09.45.06:665][859]PIE: 정보 /Game/Level/UEDPIE_0_NewMap 에 대한 에디터에서 플레이 시작 시간: 0.649
+[2017.05.14-09.45.06:707][860]LogRenderer: Reallocating scene render targets to support 3024x1680 NumSamples 1 (Frame:193020).
+[2017.05.14-09.45.29:465][586]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_NewStash" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_NewStash.uasset" SILENT=true
+[2017.05.14-09.45.29:519][586]LogSavePackage: Save=35.33ms
+[2017.05.14-09.45.29:519][586]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_NewStashE839ED954E3E96886383428324EA571B.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_NewStash.uasset'
+[2017.05.14-09.45.29:521][586]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_NewStash.uasset
+[2017.05.14-09.45.29:858][613]BlueprintLog: New page: VR_NewStash 컴파일
+[2017.05.14-09.45.43:206][658]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_NewStash" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_NewStash.uasset" SILENT=true
+[2017.05.14-09.45.43:260][658]LogSavePackage: Save=35.99ms
+[2017.05.14-09.45.43:260][658]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_NewStashFFA779744B19797B2FDCF991266F3997.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_NewStash.uasset'
+[2017.05.14-09.45.43:261][658]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_NewStash.uasset
+[2017.05.14-09.45.43:804][702]BlueprintLog: New page: VR_NewStash 컴파일
+[2017.05.14-09.45.48:137][ 25]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_NewStash" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_NewStash.uasset" SILENT=true
+[2017.05.14-09.45.48:190][ 25]LogSavePackage: Save=36.03ms
+[2017.05.14-09.45.48:190][ 25]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_NewStashCB41498A4A72427B303A64A6C8E1CAC9.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_NewStash.uasset'
+[2017.05.14-09.45.48:192][ 25]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_NewStash.uasset
+[2017.05.14-09.45.48:585][ 54]BlueprintLog: New page: VR_NewStash 컴파일
+[2017.05.14-09.46.03:492][137]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.46.03:718][137]LogSavePackage: Save=208.89ms
+[2017.05.14-09.46.03:718][137]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory4DAC87034A2C480F7E124B88B79ED7B1.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.46.03:720][137]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.46.03:886][147]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.46.07:073][292]LogTemp: Repeting last play command: VR 프리뷰
+[2017.05.14-09.46.07:089][292]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-09.46.07:089][292]PIE: New page: PIE 세션: NewMap (2017. 5. 15. 오전 3:46:07)
+[2017.05.14-09.46.07:089][292]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_NewMap
+[2017.05.14-09.46.07:092][292]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003001s)
+[2017.05.14-09.46.07:092][292]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.46.07:093][292]LogPlayLevel: PIE: World Init took: (0.000646s)
+[2017.05.14-09.46.07:093][292]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/NewMap.NewMap to /Game/Level/UEDPIE_0_NewMap.NewMap (0.003944s)
+[2017.05.14-09.46.07:180][292]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.46.07:195][292]LogInit: FAudioDevice initialized.
+[2017.05.14-09.46.07:309][292]LogLoad: Game class is 'GameModeBase'
+[2017.05.14-09.46.07:312][292]LogWorld: Bringing World /Game/Level/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.05.14-18.46.07
+[2017.05.14-09.46.07:312][292]LogWorld: Bringing up level for play took: 0.001908
+[2017.05.14-09.46.07:360][292]PIE: 정보 /Game/Level/UEDPIE_0_NewMap 에 대한 에디터에서 플레이 시작 시간: -0.656
+[2017.05.14-09.46.08:066][349]LogBlueprintUserMessages: [None] HealthPotion
+[2017.05.14-09.46.20:785][303]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.46.21:007][303]LogSavePackage: Save=203.28ms
+[2017.05.14-09.46.21:007][303]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_InventoryC4F8FF8A494C6A95EE14C6A40AD5F1F8.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.46.21:009][303]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.46.21:211][317]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.47.08:889][323]LogEditorTransaction: Undo 현 선택을 삭제합니다.
+[2017.05.14-09.48.04:719][556]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.48.05:000][556]LogSavePackage: Save=228.88ms
+[2017.05.14-09.48.05:000][556]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_InventoryB59D0BAB431634F0EB58A2A157AB3583.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.48.05:002][556]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.48.05:359][585]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.48.45:225][409]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.48.45:450][409]LogSavePackage: Save=208.16ms
+[2017.05.14-09.48.45:450][409]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory16132E6A437C6ECDE555BF88A58BE70D.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.48.45:452][409]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.48.45:727][430]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.48.48:043][510]LogTemp: Repeting last play command: VR 프리뷰
+[2017.05.14-09.48.48:059][510]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-09.48.48:059][510]PIE: New page: PIE 세션: NewMap (2017. 5. 15. 오전 3:48:48)
+[2017.05.14-09.48.48:059][510]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_NewMap
+[2017.05.14-09.48.48:063][510]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003878s)
+[2017.05.14-09.48.48:064][510]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.48.48:064][510]LogPlayLevel: PIE: World Init took: (0.000977s)
+[2017.05.14-09.48.48:064][510]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/NewMap.NewMap to /Game/Level/UEDPIE_0_NewMap.NewMap (0.005045s)
+[2017.05.14-09.48.48:147][510]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.48.48:162][510]LogInit: FAudioDevice initialized.
+[2017.05.14-09.48.48:267][510]LogLoad: Game class is 'GameModeBase'
+[2017.05.14-09.48.48:269][510]LogWorld: Bringing World /Game/Level/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.05.14-18.48.48
+[2017.05.14-09.48.48:270][510]LogWorld: Bringing up level for play took: 0.001878
+[2017.05.14-09.48.48:310][510]PIE: 정보 /Game/Level/UEDPIE_0_NewMap 에 대한 에디터에서 플레이 시작 시간: 0.294
+[2017.05.14-09.48.53:035][928]LogBlueprintUserMessages: [None] HealthPotion
+[2017.05.14-09.48.59:355][402]LogSlate: Took 0.021969 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2017.05.14-09.49.15:299][777]LogSavePackage: Save=96.82ms
+[2017.05.14-09.49.15:299][777]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawn33B6EA614F46718CB7E1C7A51C931B82.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.49.15:301][777]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.49.15:612][801]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.49.17:097][889]LogTemp: Repeting last play command: VR 프리뷰
+[2017.05.14-09.49.17:112][889]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-09.49.17:112][889]PIE: New page: PIE 세션: NewMap (2017. 5. 15. 오전 3:49:17)
+[2017.05.14-09.49.17:112][889]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_NewMap
+[2017.05.14-09.49.17:116][889]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003431s)
+[2017.05.14-09.49.17:117][889]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.49.17:117][889]LogPlayLevel: PIE: World Init took: (0.000814s)
+[2017.05.14-09.49.17:117][889]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/NewMap.NewMap to /Game/Level/UEDPIE_0_NewMap.NewMap (0.004681s)
+[2017.05.14-09.49.17:206][889]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.49.17:220][889]LogInit: FAudioDevice initialized.
+[2017.05.14-09.49.17:328][889]LogLoad: Game class is 'GameModeBase'
+[2017.05.14-09.49.17:331][889]LogWorld: Bringing World /Game/Level/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.05.14-18.49.17
+[2017.05.14-09.49.17:331][889]LogWorld: Bringing up level for play took: 0.001556
+[2017.05.14-09.49.17:377][889]PIE: 정보 /Game/Level/UEDPIE_0_NewMap 에 대한 에디터에서 플레이 시작 시간: -0.64
+[2017.05.14-09.49.22:089][305]LogBlueprintUserMessages: [None] HealthPotion
+[2017.05.14-09.49.43:303][ 68]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.49.43:528][ 68]LogSavePackage: Save=205.75ms
+[2017.05.14-09.49.43:528][ 68]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory79CE2BD9481E7B817204518B1F39A566.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.49.43:530][ 68]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.49.43:925][100]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.50.15:577][569]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.50.15:806][569]LogSavePackage: Save=211.05ms
+[2017.05.14-09.50.15:806][569]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory8DC2D2984D74CE9949B4FB9D182E3029.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.50.15:808][569]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.50.16:155][597]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.50.32:053][740]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.50.32:281][740]LogSavePackage: Save=210.37ms
+[2017.05.14-09.50.32:281][740]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_InventoryFB6FA8CA4B07CA471F0007A038848478.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.50.32:283][740]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.50.32:746][778]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.50.35:009][864]LogTemp: Repeting last play command: VR 프리뷰
+[2017.05.14-09.50.35:025][864]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-09.50.35:025][864]PIE: New page: PIE 세션: NewMap (2017. 5. 15. 오전 3:50:35)
+[2017.05.14-09.50.35:025][864]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_NewMap
+[2017.05.14-09.50.35:029][864]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003573s)
+[2017.05.14-09.50.35:030][864]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.50.35:030][864]LogPlayLevel: PIE: World Init took: (0.000824s)
+[2017.05.14-09.50.35:030][864]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/NewMap.NewMap to /Game/Level/UEDPIE_0_NewMap.NewMap (0.004751s)
+[2017.05.14-09.50.35:123][864]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.50.35:139][864]LogInit: FAudioDevice initialized.
+[2017.05.14-09.50.35:240][864]LogLoad: Game class is 'GameModeBase'
+[2017.05.14-09.50.35:243][864]LogWorld: Bringing World /Game/Level/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.05.14-18.50.35
+[2017.05.14-09.50.35:243][864]LogWorld: Bringing up level for play took: 0.001377
+[2017.05.14-09.50.35:289][864]PIE: 정보 /Game/Level/UEDPIE_0_NewMap 에 대한 에디터에서 플레이 시작 시간: -0.727
+[2017.05.14-09.50.42:946][398]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.50.43:174][398]LogSavePackage: Save=210.35ms
+[2017.05.14-09.50.43:174][398]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_InventoryB2BFDE4948DFF4CF79C04393BBF46475.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.50.43:176][398]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.50.43:598][431]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.50.45:886][512]LogTemp: Repeting last play command: VR 프리뷰
+[2017.05.14-09.50.45:903][512]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-09.50.45:903][512]PIE: New page: PIE 세션: NewMap (2017. 5. 15. 오전 3:50:45)
+[2017.05.14-09.50.45:903][512]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_NewMap
+[2017.05.14-09.50.45:907][512]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002988s)
+[2017.05.14-09.50.45:907][512]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.50.45:907][512]LogPlayLevel: PIE: World Init took: (0.000690s)
+[2017.05.14-09.50.45:908][512]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/NewMap.NewMap to /Game/Level/UEDPIE_0_NewMap.NewMap (0.004123s)
+[2017.05.14-09.50.45:996][512]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.50.46:011][512]LogInit: FAudioDevice initialized.
+[2017.05.14-09.50.46:128][512]LogLoad: Game class is 'GameModeBase'
+[2017.05.14-09.50.46:131][512]LogWorld: Bringing World /Game/Level/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.05.14-18.50.46
+[2017.05.14-09.50.46:131][512]LogWorld: Bringing up level for play took: 0.001557
+[2017.05.14-09.50.46:180][512]PIE: 정보 /Game/Level/UEDPIE_0_NewMap 에 대한 에디터에서 플레이 시작 시간: 0.164
+[2017.05.14-09.50.47:884][657]LogBlueprintUserMessages: [None] HealthPotion
+[2017.05.14-09.50.57:776][443]LogTemp: Repeting last play command: VR 프리뷰
+[2017.05.14-09.50.57:791][443]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-09.50.57:791][443]PIE: New page: PIE 세션: NewMap (2017. 5. 15. 오전 3:50:57)
+[2017.05.14-09.50.57:791][443]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_NewMap
+[2017.05.14-09.50.57:794][443]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003142s)
+[2017.05.14-09.50.57:795][443]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.50.57:795][443]LogPlayLevel: PIE: World Init took: (0.000832s)
+[2017.05.14-09.50.57:795][443]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/NewMap.NewMap to /Game/Level/UEDPIE_0_NewMap.NewMap (0.004362s)
+[2017.05.14-09.50.57:882][443]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.50.57:896][443]LogInit: FAudioDevice initialized.
+[2017.05.14-09.50.58:002][443]LogLoad: Game class is 'GameModeBase'
+[2017.05.14-09.50.58:004][443]LogWorld: Bringing World /Game/Level/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.05.14-18.50.58
+[2017.05.14-09.50.58:005][443]LogWorld: Bringing up level for play took: 0.002395
+[2017.05.14-09.50.58:052][443]PIE: 정보 /Game/Level/UEDPIE_0_NewMap 에 대한 에디터에서 플레이 시작 시간: 0.036
+[2017.05.14-09.50.59:769][589]LogBlueprintUserMessages: [None] HealthPotion
+[2017.05.14-09.50.59:769][589]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_FunctionEntry', from offset 0
+[2017.05.14-09.50.59:769][589]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/BluePrint/VR_Inven/VR_Inventory.VR_Inventory_C:ExecuteUbergraph_VR_Inventory
+	Function /Game/BluePrint/VR_Inven/VR_Inventory.VR_Inventory_C:UseItem
+	Function /Game/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.ItemUseable_HealthPotion_C:OnUse
+	Function /Game/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.ItemUseable_HealthPotion_C:ExecuteUbergraph_ItemUseable_HealthPotion
+	Function /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn_C:Heal
+
+[2017.05.14-09.52.10:662][492]LogSavePackage: Save=96.01ms
+[2017.05.14-09.52.10:662][492]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawn77369B9F42B9E37699EA269E93935C2C.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.52.10:664][492]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.52.11:041][519]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.52.12:512][593]LogTemp: Repeting last play command: VR 프리뷰
+[2017.05.14-09.52.12:528][593]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-09.52.12:528][593]PIE: New page: PIE 세션: NewMap (2017. 5. 15. 오전 3:52:12)
+[2017.05.14-09.52.12:528][593]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_NewMap
+[2017.05.14-09.52.12:532][593]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003172s)
+[2017.05.14-09.52.12:532][593]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.52.12:533][593]LogPlayLevel: PIE: World Init took: (0.000886s)
+[2017.05.14-09.52.12:533][593]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/NewMap.NewMap to /Game/Level/UEDPIE_0_NewMap.NewMap (0.004409s)
+[2017.05.14-09.52.12:620][593]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.52.12:634][593]LogInit: FAudioDevice initialized.
+[2017.05.14-09.52.12:745][593]LogLoad: Game class is 'GameModeBase'
+[2017.05.14-09.52.12:747][593]LogWorld: Bringing World /Game/Level/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.05.14-18.52.12
+[2017.05.14-09.52.12:747][593]LogWorld: Bringing up level for play took: 0.001638
+[2017.05.14-09.52.12:795][593]PIE: 정보 /Game/Level/UEDPIE_0_NewMap 에 대한 에디터에서 플레이 시작 시간: 0.779
+[2017.05.14-09.52.14:508][741]LogBlueprintUserMessages: [None] HealthPotion
+[2017.05.14-09.52.35:625][306]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.52.35:849][306]LogSavePackage: Save=207.44ms
+[2017.05.14-09.52.35:849][306]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory9D6B8E374FB54A89371B349E56EC7514.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.52.35:851][306]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.52.36:114][327]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.52.44:713][895]LogSavePackage: Save=121.47ms
+[2017.05.14-09.52.44:713][895]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawn81B15D4E4C7B407CD2EF1EB6EA080E21.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.52.44:715][895]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.52.45:014][916]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.52.45:928][946]LogTemp: Repeting last play command: VR 프리뷰
+[2017.05.14-09.52.45:944][946]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.05.14-09.52.45:944][946]PIE: New page: PIE 세션: NewMap (2017. 5. 15. 오전 3:52:45)
+[2017.05.14-09.52.45:944][946]LogPlayLevel: Creating play world package: /Game/Level/UEDPIE_0_NewMap
+[2017.05.14-09.52.45:948][946]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003267s)
+[2017.05.14-09.52.45:949][946]LogAIModule: Creating AISystem for world NewMap
+[2017.05.14-09.52.45:949][946]LogPlayLevel: PIE: World Init took: (0.000760s)
+[2017.05.14-09.52.45:949][946]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Level/NewMap.NewMap to /Game/Level/UEDPIE_0_NewMap.NewMap (0.004481s)
+[2017.05.14-09.52.46:037][946]LogInit: XAudio2 using '스피커(USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.05.14-09.52.46:053][946]LogInit: FAudioDevice initialized.
+[2017.05.14-09.52.46:157][946]LogLoad: Game class is 'GameModeBase'
+[2017.05.14-09.52.46:160][946]LogWorld: Bringing World /Game/Level/UEDPIE_0_NewMap.NewMap up for play (max tick rate 0) at 2017.05.14-18.52.46
+[2017.05.14-09.52.46:160][946]LogWorld: Bringing up level for play took: 0.001574
+[2017.05.14-09.52.46:209][946]PIE: 정보 /Game/Level/UEDPIE_0_NewMap 에 대한 에디터에서 플레이 시작 시간: 0.193
+[2017.05.14-09.52.47:927][ 95]LogBlueprintUserMessages: [None] HealthPotion
+[2017.05.14-09.55.25:761][443]LogSavePackage: Save=101.25ms
+[2017.05.14-09.55.25:761][443]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawnF5F728F04229FE5F2B3728A55DD36E0E.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.55.25:763][443]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.55.33:397][996]LogSavePackage: Save=98.73ms
+[2017.05.14-09.55.33:397][996]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawn984B0E4143F58E32DE9F9AA8713A4261.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.55.33:399][996]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.55.48:669][215]LogSavePackage: Save=96.02ms
+[2017.05.14-09.55.48:670][215]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawnB4F7FD1A418E25E4849AD4AC6A4DA384.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.55.48:672][215]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.55.51:896][444]LogSavePackage: Save=95.19ms
+[2017.05.14-09.55.51:896][444]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawnA7A678CA47059A62955AE5A3AED5BD97.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-09.55.51:898][444]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-09.55.52:242][470]BlueprintLog: New page: MotionControllerPawn 컴파일
+[2017.05.14-09.57.41:214][424]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.57.41:449][424]LogSavePackage: Save=211.38ms
+[2017.05.14-09.57.41:449][424]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory80C7A2104725BFA8CFBEDAA77A3D98F0.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.57.41:451][424]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.57.41:719][443]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.58.01:952][895]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/VR_Inventory" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset" SILENT=true
+[2017.05.14-09.58.02:175][895]LogSavePackage: Save=206.60ms
+[2017.05.14-09.58.02:176][895]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/VR_Inventory306C5A48433B0319F7357C8877014533.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset'
+[2017.05.14-09.58.02:178][895]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/VR_Inventory.uasset
+[2017.05.14-09.58.02:542][924]BlueprintLog: New page: VR_Inventory 컴파일
+[2017.05.14-09.59.22:725][ 80]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_HealthPotion.SKEL_ItemUseable_HealthPotion_C' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.PackageMetaData'
+[2017.05.14-09.59.22:725][ 80]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_HealthPotion.ItemUseable_HealthPotion_C' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.PackageMetaData'
+[2017.05.14-09.59.22:725][ 80]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_HealthPotion.ItemUseable_HealthPotion_C:ExecuteUbergraph_ItemUseable_HealthPotion' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.PackageMetaData'
+[2017.05.14-09.59.22:725][ 80]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_HealthPotion.SKEL_ItemUseable_HealthPotion_C:ExecuteUbergraph_ItemUseable_HealthPotion' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable_HealthPotion.PackageMetaData'
+[2017.05.14-09.59.22:730][ 80]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_StaminaPotion.SKEL_ItemUseable_StaminaPotion_C' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable_StaminaPotion.PackageMetaData'
+[2017.05.14-09.59.22:731][ 80]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_StaminaPotion.ItemUseable_StaminaPotion_C' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable_StaminaPotion.PackageMetaData'
+[2017.05.14-09.59.22:756][ 80]LogSavePackage: Save=4.18ms
+[2017.05.14-09.59.22:756][ 80]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseable_HealthPotion3C145C964A41B46AD7596D875D02456D.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_HealthPotion.uasset'
+[2017.05.14-09.59.22:757][ 80]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_HealthPotion.uasset
+[2017.05.14-09.59.22:763][ 80]LogSavePackage: Save=2.05ms
+[2017.05.14-09.59.22:763][ 80]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseable_StaminaPotionB20C597449B5047438E065BAFF3DAEE1.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_StaminaPotion.uasset'
+[2017.05.14-09.59.22:765][ 80]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItem/ItemUseable_StaminaPotion.uasset
+[2017.05.14-09.59.23:049][ 80]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/UseableItemDB" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset" SILENT=true
+[2017.05.14-09.59.23:069][ 80]LogSavePackage: Save=0.95ms
+[2017.05.14-09.59.23:069][ 80]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/UseableItemDB8656CBC5490C15F13A7FA58AB95E01EF.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset'
+[2017.05.14-09.59.23:070][ 80]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset
+[2017.05.14-09.59.23:074][ 80]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/UseableItemDB" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset" SILENT=true
+[2017.05.14-09.59.23:093][ 80]LogSavePackage: Save=1.10ms
+[2017.05.14-09.59.23:093][ 80]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/UseableItemDBBFE154B04D3DA922A1380F94461E7BE7.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset'
+[2017.05.14-09.59.23:094][ 80]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItemDB.uasset
+[2017.05.14-09.59.52:870][495]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable.SKEL_ItemUseable_C:ExecuteUbergraph_ItemUseable' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable.PackageMetaData'
+[2017.05.14-09.59.52:870][495]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable.ItemUseable_C' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable.PackageMetaData'
+[2017.05.14-09.59.52:870][495]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable.SKEL_ItemUseable_C:Player' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable.PackageMetaData'
+[2017.05.14-09.59.52:870][495]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable.SKEL_ItemUseable_C' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable.PackageMetaData'
+[2017.05.14-09.59.52:870][495]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable.ItemUseable_C:ExecuteUbergraph_ItemUseable' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable.PackageMetaData'
+[2017.05.14-09.59.52:871][495]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/UseableItem/ItemUseable.ItemUseable_C:Player' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemUseable.PackageMetaData'
+[2017.05.14-09.59.52:904][495]LogSavePackage: Save=6.64ms
+[2017.05.14-09.59.52:904][495]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseable884CB79A4CB0E296E7AE9C9663FCC4C8.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItem/ItemUseable.uasset'
+[2017.05.14-09.59.52:907][495]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/UseableItem/ItemUseable.uasset
+[2017.05.14-09.59.52:910][495]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemUseable" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset" SILENT=true
+[2017.05.14-09.59.52:931][495]LogSavePackage: Save=1.06ms
+[2017.05.14-09.59.52:931][495]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemUseable4A9B94FD4303A7F196B5BBB294EF72F9.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset'
+[2017.05.14-09.59.52:933][495]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemUseable.uasset
+[2017.05.14-09.59.55:521][695]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/Equipment/ItemEquipment.ItemEquipment_C' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemEquipment.PackageMetaData'
+[2017.05.14-09.59.55:521][695]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/Equipment/ItemEquipment.ItemEquipment_C:ExecuteUbergraph_ItemEquipment' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemEquipment.PackageMetaData'
+[2017.05.14-09.59.55:521][695]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/Equipment/ItemEquipment.SKEL_ItemEquipment_C:ExecuteUbergraph_ItemEquipment' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemEquipment.PackageMetaData'
+[2017.05.14-09.59.55:522][695]LogMetaData: Removing '/Game/BluePrint/VR_Inven/Items/Equipment/ItemEquipment.SKEL_ItemEquipment_C' ref from Metadata '/Game/BluePrint/VR_Inven/Items/ItemEquipment.PackageMetaData'
+[2017.05.14-09.59.55:549][695]LogSavePackage: Save=2.54ms
+[2017.05.14-09.59.55:549][695]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemEquipmentC850F07A4F6C8D97174658A4323043EC.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/Equipment/ItemEquipment.uasset'
+[2017.05.14-09.59.55:550][695]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/Equipment/ItemEquipment.uasset
+[2017.05.14-09.59.55:555][695]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BluePrint/VR_Inven/Items/ItemEquipment" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemEquipment.uasset" SILENT=true
+[2017.05.14-09.59.55:575][695]LogSavePackage: Save=1.17ms
+[2017.05.14-09.59.55:575][695]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/ItemEquipment8001E286462D656487756D92A9E328EF.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemEquipment.uasset'
+[2017.05.14-09.59.55:577][695]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/BluePrint/VR_Inven/Items/ItemEquipment.uasset
+[2017.05.14-10.01.12:995][713]LogSavePackage: Save=95.86ms
+[2017.05.14-10.01.12:995][713]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/MotionControllerPawnC748ED134DD19D35A5C6589FF164F8EE.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
+[2017.05.14-10.01.12:997][713]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset
+[2017.05.14-10.03.36:569][ 99]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.14-10.06.17:271][833]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Level/NewMap" FILE="../../../../../GitHub/VR_Inventory/Inventory/Content/Level/NewMap.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.05.14-10.06.17:347][833]LogSavePackage: Save=40.97ms
+[2017.05.14-10.06.17:347][833]LogSavePackage: Moving '../../../../../GitHub/VR_Inventory/Inventory/Saved/NewMap3CDC68FE4482BAE7C84157A3A0BC50F1.tmp' to '../../../../../GitHub/VR_Inventory/Inventory/Content/Level/NewMap.umap'
+[2017.05.14-10.06.17:349][833]LogSavePackage:Display: Finished SavePackage ../../../../../GitHub/VR_Inventory/Inventory/Content/Level/NewMap.umap
+[2017.05.14-10.06.17:369][833]LogFileHelpers: Saving map 'NewMap' took 0.188
+[2017.05.14-10.06.17:440][833]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.14-10.06.17:549][833]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.14-10.06.17:610][833]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2017.05.14-10.06.17:826][833]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2017.05.14-10.06.18:006][834]Cmd: QUIT_EDITOR
+[2017.05.14-10.06.18:260][834]LogExit: Preparing to exit.
+[2017.05.14-10.06.18:785][834]LogDirectoryWatcher: A directory notification for 'D:/GitHub/VR_Inventory/Inventory/Content/' was aborted.
+[2017.05.14-10.06.18:819][834]LogExit: Editor shut down
+[2017.05.14-10.06.18:820][834]LogExit: Transaction tracking system shut down
+[2017.05.14-10.06.18:908][834]LogObj: Freed 0b from 0 cluster array pools.
+[2017.05.14-10.06.18:908][834]LogExit: Object subsystem successfully closed.
+[2017.05.14-10.06.18:929][834]LogD3D11RHI: Shutdown
+[2017.05.14-10.06.18:929][834]LogD3D11RHI: CleanupD3DDevice
+[2017.05.14-10.06.18:932][834]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.05.14-10.06.18:940][834]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (506)
+[2017.05.14-10.06.18:940][834]LogModuleManager: Shutting down and abandoning module DataTableEditor (504)
+[2017.05.14-10.06.18:940][834]LogModuleManager: Shutting down and abandoning module BlueprintGraph (502)
+[2017.05.14-10.06.18:940][834]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (500)
+[2017.05.14-10.06.18:940][834]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (498)
+[2017.05.14-10.06.18:940][834]LogModuleManager: Shutting down and abandoning module CrashTracker (496)
+[2017.05.14-10.06.18:940][834]LogModuleManager: Shutting down and abandoning module SceneOutliner (494)
+[2017.05.14-10.06.18:940][834]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.05.14-10.06.18:940][834]LogDirectoryWatcher: A directory notification for 'D:/EpicGames/UE_4.15/FeaturePacks/' was aborted.
+[2017.05.14-10.06.18:942][834]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.05.14-10.06.18:942][834]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.05.14-10.06.18:943][834]LogDirectoryWatcher: A directory notification for 'D:/GitHub/VR_Inventory/Inventory/Content/Collections/' was aborted.
+[2017.05.14-10.06.18:943][834]LogDirectoryWatcher: A directory notification for 'D:/GitHub/VR_Inventory/Inventory/Content/Developers/Administrator/Collections/' was aborted.
+[2017.05.14-10.06.18:943][834]LogDirectoryWatcher: A directory notification for 'D:/GitHub/VR_Inventory/Inventory/Saved/Collections/' was aborted.
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module StatsViewer (484)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module FoliageEdit (482)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module LandscapeEditor (480)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (478)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module ActorPickerMode (476)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module GeometryMode (474)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module TextureAlignMode (472)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module BspMode (470)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module HardwareSurvey (468)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (466)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module AutomationWorker (464)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (462)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (460)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module PlacementMode (459)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (456)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (454)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module MfMediaFactory (452)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module MfMediaEditor (450)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (448)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (446)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (444)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module Media (443)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (440)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module CharacterAI (438)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module AudioCapture (436)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module SequenceRecorder (435)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module SmartSnapping (432)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module SessionServices (430)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module ViewportSnapping (428)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module ViewportInteraction (426)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module LogVisualizer (424)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module IntroTutorials (422)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (421)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (418)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (416)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (414)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (412)
+[2017.05.14-10.06.18:943][834]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (411)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (408)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (406)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module InputBindingEditor (404)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module NiagaraEditor (402)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module MergeActors (400)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module SizeMap (398)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module TreeMap (396)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module ReferenceViewer (394)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (392)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module LocalizationService (391)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module HardwareTargeting (388)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (386)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module UndoHistory (384)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module UserFeedback (382)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module XmlParser (380)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module Blutility (378)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (376)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (375)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (372)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module SettingsEditor (370)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module ProjectLauncher (368)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module SessionFrontend (366)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module ProfilerClient (364)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module DeviceManager (362)
+[2017.05.14-10.06.19:317][834]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (361)
+[2017.05.14-10.06.19:359][834]LogModuleManager: Shutting down and abandoning module AutomationController (358)
+[2017.05.14-10.06.19:359][834]LogModuleManager: Shutting down and abandoning module AutomationWindow (356)
+[2017.05.14-10.06.19:359][834]LogModuleManager: Shutting down and abandoning module Layers (354)
+[2017.05.14-10.06.19:359][834]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (352)
+[2017.05.14-10.06.19:359][834]LogModuleManager: Shutting down and abandoning module DetailCustomizations (350)
+[2017.05.14-10.06.19:359][834]LogModuleManager: Shutting down and abandoning module PackagesDialog (348)
+[2017.05.14-10.06.19:359][834]LogModuleManager: Shutting down and abandoning module Persona (346)
+[2017.05.14-10.06.19:359][834]LogModuleManager: Shutting down and abandoning module AnimGraph (345)
+[2017.05.14-10.06.19:359][834]LogModuleManager: Shutting down and abandoning module Kismet (342)
+[2017.05.14-10.06.19:370][834]LogModuleManager: Shutting down and abandoning module GraphEditor (340)
+[2017.05.14-10.06.19:370][834]LogModuleManager: Shutting down and abandoning module ClassViewer (338)
+[2017.05.14-10.06.19:371][834]LogModuleManager: Shutting down and abandoning module Toolbox (336)
+[2017.05.14-10.06.19:371][834]LogModuleManager: Shutting down and abandoning module ModuleUI (334)
+[2017.05.14-10.06.19:371][834]LogModuleManager: Shutting down and abandoning module MovieSceneTools (332)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module OutputLog (330)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module GammaUI (328)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module Documentation (326)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module Niagara (324)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (322)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module AnalyticsET (320)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module PortalServices (318)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module PortalRpc (316)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module MessagingRpc (314)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module AIModule (312)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module GameplayDebugger (311)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module AITestSuite (309)
+[2017.05.14-10.06.19:372][834]LogModuleManager: Shutting down and abandoning module ProfilerService (306)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module TaskGraph (304)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module SteamVRController (302)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module SteamVR (300)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (298)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (296)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module OculusLibrary (294)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module OculusInput (292)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (290)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (288)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module CableComponent (286)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (284)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (280)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module HTML5Networking (278)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module AlembicImporter (276)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module AlembicLibrary (275)
+[2017.05.14-10.06.19:384][834]LogModuleManager: Shutting down and abandoning module GeometryCache (274)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (273)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (268)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module SuperSearch (267)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (264)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module PluginBrowser (262)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (260)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module EpicSurvey (258)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (256)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module DesktopPlatform (255)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module UObjectPlugin (252)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (250)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (248)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module GitSourceControl (246)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module SourceControl (245)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (242)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (240)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (238)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module Paper2DEditor (236)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module MeshPaint (235)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module LevelEditor (233)
+[2017.05.14-10.06.19:385][834]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (232)
+[2017.05.14-10.06.19:386][834]LogModuleManager: Shutting down and abandoning module MainFrame (230)
+[2017.05.14-10.06.19:386][834]LogModuleManager: Shutting down and abandoning module HotReload (229)
+[2017.05.14-10.06.19:386][834]LogModuleManager: Shutting down and abandoning module ContentBrowser (225)
+[2017.05.14-10.06.19:387][834]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (222)
+[2017.05.14-10.06.19:387][834]LogModuleManager: Shutting down and abandoning module PhysXVehicles (220)
+[2017.05.14-10.06.19:387][834]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (218)
+[2017.05.14-10.06.19:387][834]LogModuleManager: Shutting down and abandoning module UdpMessaging (216)
+[2017.05.14-10.06.19:487][834]LogModuleManager: Shutting down and abandoning module TcpMessaging (214)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (212)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (210)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module FacialAnimation (208)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (206)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module Paper2D (204)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (202)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module WmfMedia (200)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module MfMedia (198)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module MediaAssets (196)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (194)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module VREditor (192)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (190)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (188)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module FunctionalTesting (186)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (184)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module UMG (182)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module UMGEditor (181)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module Sequencer (180)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module AssetTools (178)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module MessageLog (177)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (176)
+[2017.05.14-10.06.19:636][834]LogModuleManager: Shutting down and abandoning module SlateReflector (170)
+[2017.05.14-10.06.19:637][834]LogModuleManager: Shutting down and abandoning module Slate (168)
+[2017.05.14-10.06.19:637][834]LogModuleManager: Shutting down and abandoning module EditorStyle (166)
+[2017.05.14-10.06.19:638][834]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (164)
+[2017.05.14-10.06.19:638][834]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (162)
+[2017.05.14-10.06.19:638][834]LogModuleManager: Shutting down and abandoning module XAudio2 (160)
+[2017.05.14-10.06.19:638][834]LogModuleManager: Shutting down and abandoning module Networking (158)
+[2017.05.14-10.06.19:638][834]LogModuleManager: Shutting down and abandoning module Core (154)
+[2017.05.14-10.06.19:639][834]LogModuleManager: Shutting down and abandoning module AssetRegistry (152)
+[2017.05.14-10.06.19:747][834]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.05.14-10.06.19:747][834]LogDirectoryWatcher: A directory notification for '../../../../../GitHub/VR_Inventory/Inventory/Content/' was aborted.
+[2017.05.14-10.06.19:747][834]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.05.14-10.06.19:747][834]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (151)
+[2017.05.14-10.06.19:748][834]LogModuleManager: Shutting down and abandoning module KismetCompiler (148)
+[2017.05.14-10.06.19:748][834]LogModuleManager: Shutting down and abandoning module PhysXFormats (146)
+[2017.05.14-10.06.19:748][834]LogModuleManager: Shutting down and abandoning module MeshUtilities (144)
+[2017.05.14-10.06.19:748][834]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (143)
+[2017.05.14-10.06.19:748][834]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (141)
+[2017.05.14-10.06.19:748][834]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (139)
+[2017.05.14-10.06.19:748][834]LogModuleManager: Shutting down and abandoning module PropertyEditor (137)
+[2017.05.14-10.06.19:748][834]LogModuleManager: Shutting down and abandoning module DerivedDataCache (134)
+[2017.05.14-10.06.19:808][834]LogDerivedDataCache: Shutdown
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module TargetPlatform (132)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (131)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (129)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (127)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (125)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (123)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (121)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (119)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (117)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (115)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module ImageWrapper (114)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (111)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (109)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (107)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (105)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (103)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (101)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (99)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (97)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (95)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module Messaging (93)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (91)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (89)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (87)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (85)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (83)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (81)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (79)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (77)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (75)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (73)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (71)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (69)
+[2017.05.14-10.06.19:808][834]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (67)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (65)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (63)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (61)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (59)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (57)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (55)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module Settings (50)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module OculusRift (48)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module GearVR (46)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.05.14-10.06.19:809][834]LogOnline:Display: Unloading online subsystem: NULL
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.05.14-10.06.19:809][834]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.05.14-10.06.19:809][834]LogHttp:Display: Http module shutting down, but needs to wait on 2 outstanding Http requests:
+[2017.05.14-10.06.19:809][834]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B23D6DE7E-46E9-7808-F97E-84A1FA6A8141%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.2-3416026%2B%2B%2BUE4%2BRelease-4.15&UserID=f2134d0c4d815fe5deb956a68c25832f%7C79d9d70e03a94da2a36573f877b3400e%7Ca671821a-70f2-4aa6-b3fa-d9feac38d6e8&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.14-10.06.19:809][834]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B23D6DE7E-46E9-7808-F97E-84A1FA6A8141%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.2-3416026%2B%2B%2BUE4%2BRelease-4.15&UserID=f2134d0c4d815fe5deb956a68c25832f%7C79d9d70e03a94da2a36573f877b3400e%7Ca671821a-70f2-4aa6-b3fa-d9feac38d6e8&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.05.14-10.06.19:825][834]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.05.14-10.06.19:826][834]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.05.14-10.06.19:826][834]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.05.14-10.06.19:826][834]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.05.14-10.06.19:826][834]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.05.14-10.06.19:826][834]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.05.14-10.06.19:830][834]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.05.14-10.06.19:833][834]LogExit: Exiting.
+[2017.05.14-10.06.19:845][834]Log file closed, 05/14/17 19:06:19
